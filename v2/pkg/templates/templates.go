@@ -30,6 +30,8 @@ const (
 // Template is a YAML input file which defines all the requests and
 // other metadata for a template.
 type Template struct {
+	// 中文描述
+	NameCn string `yaml:"name-cn" jsonschema:"title=name-cn of the template,description="`
 	// description: |
 	//   ID is the unique id for the template.
 	//
